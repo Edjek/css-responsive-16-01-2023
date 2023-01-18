@@ -1,105 +1,68 @@
 <!-- Je met un commentaire chaque fois que je vois une erreur! -->
-<!-- Absense de Doctype -->
-<!DOCTYPE html>
-<!-- lang de 'fr' -->
-<html lang="fr">
+<html lang="de">
     <head>
-        <!-- Mauvais encodage -->
-        <meta charset="UTF-8" />
-        <!-- Absence de meta viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Absence de meta IE -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- Keyword stuffing -->
+        <meta charset="UTF-57" />
         <meta name="description" content="ordinateur, disque dur, mémoire vive, carte mère, moniteur, SSD, clavier mécanique" />
-        <!-- Absence de title -->
-        <title>TechLab - le premier distributeur de matériel informatique en France.</title>
     </head>
     <body>
-        <!-- Pas de header -->
-        <header id="home">
-            <nav>
-                <!-- mauvais href -->
-                <a href="#home">Accueil</a>
-                <a href="#produits">Produits</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+        <nav>
+            <a href="#home">Accueil</a>
+            <a href="produits">Produits</a>
+            <a href="#services">Services</a>
+            <a href="contact">Contact</a>
+        </nav>
+        <h3>Bienvenue sur TechLab.com, le premier distributeur de matériel informatique en France.</h3>
+        <button>Contact</button>
+        <button>Services</button>
+        <div id="produits">
+            <h6>Nos différents produits</h6>
+            <div>
+                <h4>Carte mère : MSI MAG B550 TOMAHAWK</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro adipisci ut laborum itaque, tenetur hic.</p>
+                <button>Caractéristiques</button>
+            </div>
+            <div>
+                <h4>RAM : Corsair Vengeance LPX Black DDR4 2 x 16 Go 3200 MHz CAS 16</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro adipisci ut laborum itaque, tenetur hic.</p>
+                <button>Caractéristiques</button>
+            </div>
+            <div>
+                <h4>Carte graphique : Gigabyte GeForce RTX 3090 XTREME 24G</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro adipisci ut laborum itaque, tenetur hic.</p>
+                <button>Caractéristiques</button>
+            </div>
+        </div>
+        <div>
+            <h3>Nos services</h3>
+            <div>
+                <h2>Réparation d'ordinateur</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni, modi assumenda at laborum praesentium facilis inventore facere a dolorem.</p>
+                <img src="laptop.jpg" />
+            </div>
+            <div>
+                <h2>Reprise de matériel d'occasion</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia totam molestias ullam, porro ut nam.</p>
+                <img src="money.jpg" />
+            </div>
+        </div>
+        <div>
+            <h1>Une question ? Contactez-nous !</h1>
+            <form>
+                <label for="email">Votre mail</label>
+                <input type="password" name="email" />
 
-        <!-- On rajoute <main>, <section> pour la semantique -->
-        <main>
-            <section>
-            <!-- Le titre de la page doit être un h1 -->
-                <h1>Bienvenue sur TechLab.com, le premier distributeur de matériel informatique en France.</h1>
-                <!-- on doit utiliser la balise a pour les liens de navigation -->
-                <a href="#contact">Contact</a>
-                <a href="#services">Services</a>
-            </section>
+                <input type="text" name="name" />
 
-            <section id="produits">
-                <!-- On respect d'ordre des headings -->
-                <h2>Nos différents produits</h2>
-                <!-- Utlisation de l'élément sémantique "article" -->
-                <article>
-                    <h3>Carte mère : MSI MAG B550 TOMAHAWK</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur 
-                        itaque, tenetur hic.</p>
-                    <a href="produits/carte-mere.html">Caractéristiques</a>
-                </article>
-                <article>
-                    <h3>RAM : Corsair Vengeance LPX Black DDR4 2 x 16 Go 3200 MHz CAS 16</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro adipisci ut laborum itaque, tenetur hic.</p>
-                    <a href="produits/corsaire.html">Caractéristiques</a>
-                </article>
-                <article>
-                    <h3>Carte graphique : Gigabyte GeForce RTX 3090 XTREME 24G</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro adipisci ut laborum itaque, tenetur hic.</p>
-                    <a href="produits/">Caractéristiques</a>
-                </article>
-            </section>
+                <label for="message" name="message">Votre message</label>
+                <input type="text" />
 
-            <section id="services">
-                <h2>Nos services</h2>
-                <div>
-                    <h3>Réparation d'ordinateur</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium magni, modi assumenda at laborum praesentium facilis inventore facere a dolorem.</p>
-                    <img src="laptop.jpg" alt="ordinateur portable" />
-                </div>
-                <div>
-                    <h3>Reprise de matériel d'occasion</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia totam molestias ullam, porro ut nam.</p>
-                    <img src="money.jpg" alt="argent" />
-                </div>
-            </section>
-
-            <section id="contact">
-                <!-- Ordre des headings -->
-                <h2>Une question ? Contactez-nous !</h2>
-                <form>
-                    <label for="email">Votre mail</label>
-                    <!-- Mauvais type + rajout d'un id -->
-                    <input type="email" name="email" id="email"/>
-
-                    <!-- Rajout d'un label -->
-                    <label for="name">Nom</label>
-                    <input type="text" name="name" id="name"/>
-
-                    <!-- name sur le label -->
-                    <label for="message" name="message">Votre message</label>
-                    <!-- textarea quand on attend du texte -->
-                    <textarea name="" id="message"></textarea>
-
-                    <!-- pas de divs dans un bouton -->
-                    <button type="submit">
-                            <span>Submit</span>
-                    </button>
-                </form>
-            </section>
-        </main>
-
-        <footer>
-            <div>Tous droits réservés</div>
-        </footer>
+                <button type="submit">
+                    <div>
+                        <span>Submit</span>
+                    </div>
+                </button>
+            </form>
+        </div>
+        <div>Tous droits réservés</div>
     </body>
 </html>
