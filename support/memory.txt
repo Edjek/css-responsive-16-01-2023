@@ -1,6 +1,10 @@
 <--! CodePen -->
 https://codepen.io/dihcar-cesar
 
+<--! Games -->
+https://flexboxfroggy.com/#fr
+https://codepip.com/games/grid-garden/
+
 <--! Validator HTML -->
 https://validator.w3.org/
 
