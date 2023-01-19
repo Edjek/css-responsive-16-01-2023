@@ -1,6 +1,9 @@
 /* 1. Sélectionnez seulement les éléments qui ont les classes "title" ET "main-title" en même temps et donnez-leur un background "khaki" */
 
 
+.title.main-title{
+    background-color: khaki;
+}
 
 
 
@@ -9,6 +12,9 @@
 
 
 
+.content > h2 {
+    color: red;
+}
 
 
 
@@ -18,7 +24,9 @@
 
 
 
-
+.txt, .article-link {
+    color: darkcyan;
+}
 
 
 
@@ -27,7 +35,9 @@
 
 
 
-
+.delete-btn + .modify-btn {
+    background-color: hotpink;
+}
 
 
 
@@ -36,6 +46,9 @@
 
 
 
+input[type=text] {
+    background-color: slateblue;
+}
 
 
 
@@ -44,7 +57,9 @@
 /* 6. Changez la couleur de fond du formulaire en "lightblue" seulement quand un des enfants reçoit le focus */
 
 
-
+form:focus-within {
+    background-color: lightblue;
+}
 
 
 
@@ -54,7 +69,9 @@
 
 
 
-
+li:nth-child(4) {
+    background-color: seagreen;
+}
 
 
 
@@ -62,7 +79,9 @@
 
 
 
-
+li:not(:nth-child(5)) {
+    background-color: midnightblue;
+}
 
 
 
@@ -73,9 +92,21 @@
 
 
 
+a[href^="https"] {
+    background-color: plum;
+}
+
+
 
 
 /* 10. Donnez une couleur de fond "crimson" à la premiere ligne du dernier paragraphe et augmentez la taille de sa première lettre à 50px */
 
 /* Vous avez besoin de faire deux sélections */
 
+.final-txt::first-line {
+    background-color: crimson;
+}
+
+.final-txt::first-letter{
+    font-size: 50px;
+}
