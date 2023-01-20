@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.btn {
+  color: #fff;
+  background-color: #3d6bc6;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #6489d2;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-height: 80px;
+  padding: 0 80px;
+}
+
+.logo {
+  font-family: "Nunito";
+  font-size: 30px;
+  font-weight: 900;
+  color: #3d6bc6;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #3d6bc6;
+}
+
+.lang {
+  margin-left: auto;
+}
+
+.lang img {
+  width: 35px;
+}
+
+.hero {
+  background-color: rgb(98, 140, 208);
+  height: calc(100vh - 80px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(../img/hotel-3000.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+  color: #fff;
+}
+
+.services {
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  min-height: 500px;
+  padding: 30px 15px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
